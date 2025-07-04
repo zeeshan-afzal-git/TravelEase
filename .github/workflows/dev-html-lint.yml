@@ -1,0 +1,17 @@
+name: Development HTML Lint
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+jobs:
+  html-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+      - name: Lint HTML Files
+        run: htmlhint "**/*.html"
