@@ -75,13 +75,3 @@
       font-size: 0.9rem;
       color: #666;
     }
-
-    @media (min-width:786px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      .downloads a {
-        display: block;
-      }
-    }
