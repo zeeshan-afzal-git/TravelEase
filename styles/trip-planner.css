@@ -31,7 +31,7 @@
       padding: 20px;
       margin-bottom: 30px;
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
     }
 
     h2 {
@@ -76,7 +76,7 @@
       color: #666;
     }
 
-    @media (max-width: 600px) {
+    @media (min-width:786px) {
       h1 {
         font-size: 1.5rem;
       }
