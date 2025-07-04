@@ -1,0 +1,193 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url('/images/main.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.hero-section .btn {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+}
+
+/* Highlights Section */
+.highlights {
+  background-color: #198754;
+  padding: 2rem 0;
+}
+
+.highlights h4 {
+  color: #ffc107;
+}
+
+/* Card Images */
+.card img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Reviews */
+.bg-white {
+  border-left: 4px solid #ffc107;
+  transition: box-shadow 0.3s;
+}
+
+.bg-white:hover {
+  box-shadow: 0 8px 32px rgb(0 0 0 / 12%);
+}
+
+/* Gallery */
+.gallery img,
+.img-fluid {
+  object-fit: cover;
+  max-height: 200px;
+  margin-bottom: 1rem;
+}
+
+/* Section Padding */
+section,
+.highlights {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+/* About Us Section */
+.about-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Responsive Tweaks */
+@media (width <= 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  section,
+  .highlights {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .gallery img {
+    max-height: 120px;
+  }
+}
+
+/* Remove Animations */
+.animate-hero,
+.animate-fade-in,
+.animate-pop-in,
+.animate-card {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Fullscreen Hero Background Section */
+.hero-bg-section {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)), url('../images/main.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.scroll-down-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.scroll-down-btn .arrow {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(-45deg);
+  margin-bottom: 0.5rem;
+  animation: bounce-down 1.2s infinite;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 20%);
+}
+
+@keyframes bounce-down {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  50% {
+    transform: translateY(18px) rotate(-45deg);
+  }
+}
+
+.scroll-down-btn:focus .arrow,
+.scroll-down-btn:hover .arrow {
+  border-color: #ffc107;
+}
+
+@media (width <= 768px) {
+  .hero-bg-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-bg-section {
+    padding-bottom: 0;
+  }
+}
+
+#main-navbar {
+  z-index: 10;
+  position: relative;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}

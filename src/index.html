@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelEase - Explore Northern Pakistan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow" id="main-navbar">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">TravelEase</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="trip-planner.html">Trip Planner</a></li>
+        <li class="nav-item"><a class="nav-link" href="travel-stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer for navbar -->
+<div style="height: 70px;"></div>
+
+<!-- Fullscreen Hero Section -->
+<section id="hero-bg" class="hero-bg-section d-flex flex-column justify-content-center align-items-center text-center">
+  <div class="container">
+    <h1 class="display-2 fw-bold text-white mb-3" style="text-shadow: 0 2px 16px rgba(0,0,0,0.5);">Welcome to TravelEase</h1>
+    <p class="lead text-white mb-4" style="text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Explore the beauty of Northern Pakistan</p>
+    <button id="scrollDownBtn" class="scroll-down-btn mt-3" aria-label="Scroll Down">
+      Scroll Down
+    </button>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section id="introduction" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Why Visit Northern Pakistan?</h2>
+    <p class="lead text-center">Northern Pakistan is home to some of the world's most stunning natural landscapes. From snow-capped peaks and crystal-clear lakes to vibrant local cultures, there's an adventure waiting for everyone.</p>
+  </div>
+</section>
+
+<!-- Featured Destinations -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Featured Destinations</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="/images/hunza.jpg" class="card-img-top" alt="Hunza Valley">
+          <div class="card-body">
+            <h5 class="card-title">Hunza Valley</h5>
+            <p class="card-text">A land of majestic mountains, rich history, and warm hospitality. Perfect for hiking, sightseeing, and cultural exploration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="/images/skardu.jpg" class="card-img-top" alt="Skardu">
+          <div class="card-body">
+            <h5 class="card-title">Skardu</h5>
+            <p class="card-text">The gateway to some of the world's highest peaks. Explore lakes, valleys, and the starting point for trekkers heading to K2 Basecamp.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="/images/fiarymedows.jpeg" class="card-img-top" alt="Fairy Meadows">
+          <div class="card-body">
+            <h5 class="card-title">Fairy Meadows</h5>
+            <p class="card-text">A dream-like alpine meadow with mesmerizing views of Nanga Parbat, ideal for camping and adventure seekers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Highlights -->
+<section class="py-5 highlights text-white">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Why Choose TravelEase?</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <h4>Expert Local Guides</h4>
+        <p>Our knowledgeable guides ensure your safety and enrich your experience with local insights.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Unique Cultural Experiences</h4>
+        <p>Immerse yourself in authentic local culture, food, and traditions.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <h4>Responsible Tourism</h4>
+        <p>We support local communities and promote eco-friendly tourism practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Traveler Reviews -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">What Our Travelers Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded">
+          <p>"An unforgettable journey! The landscapes of Hunza were beyond words, and TravelEase made it seamless."</p>
+          <h6 class="text-end fw-bold">- Sarah, UK</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded">
+          <p>"The guides were extremely professional, and I loved how connected we felt to the local culture."</p>
+          <h6 class="text-end fw-bold">- Ali, Pakistan</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded">
+          <p>"Camping at Fairy Meadows with views of Nanga Parbat is an experience I'll never forget."</p>
+          <h6 class="text-end fw-bold">- Emma, Australia</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 class="fw-bold mb-3">About TravelEase</h2>
+        <p class="lead">TravelEase is your trusted partner for exploring the wonders of Northern Pakistan. Our mission is to provide safe, memorable, and culturally rich travel experiences for adventurers and families alike.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="/images/2.webp" alt="About TravelEase" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow h-100">
+          <h5 class="fw-bold mb-2">Custom Tours</h5>
+          <p>Personalized itineraries to match your interests and schedule.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow h-100">
+          <h5 class="fw-bold mb-2">Hotel Booking</h5>
+          <p>Handpicked accommodations for comfort and convenience.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow h-100">
+          <h5 class="fw-bold mb-2">Transport</h5>
+          <p>Safe and reliable transport options for all group sizes.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="p-4 bg-white rounded shadow h-100">
+          <h5 class="fw-bold mb-2">Guided Treks</h5>
+          <p>Expert guides for trekking and adventure activities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Gallery</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <img src="/images/hunza.jpg" alt="Hunza" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/images/skardu.jpg" alt="Skardu" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/images/fiarymedows.jpeg" alt="Fairy Meadows" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/images/1.jpg" alt="Northern Pakistan" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/images/2.webp" alt="Northern Pakistan" class="img-fluid rounded shadow-sm w-100">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="/images/main.jpg" alt="Northern Pakistan" class="img-fluid rounded shadow-sm w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-5 bg-success text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Ready for Your Next Adventure?</h2>
+    <p class="lead mb-4">Contact us today to start planning your unforgettable journey to Northern Pakistan!</p>
+    <a href="contact.html" class="btn btn-warning btn-lg fw-bold">Contact Us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  <p class="mb-0">&copy; 2025 TravelEase | Northern Pakistan's Trusted Trip Planner</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const scrollBtn = document.getElementById('scrollDownBtn');
+scrollBtn.addEventListener('click', function() {
+  const nextSection = document.getElementById('introduction');
+  if (nextSection) {
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+  }
+});
+</script>
+</body>
+</html>
