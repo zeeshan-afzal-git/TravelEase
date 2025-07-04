@@ -1,0 +1,35 @@
+name: Release CSS Lint
+
+on:
+  release:
+    types: [published]
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  css-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install stylelint stylelint-config-standard --save-dev
+
+      - name: Run CSS Lint
+        run: |
+          npx stylelint "**/*.css"
+
+      - name: Upload lint results (optional)
+        if: failure()
+        run: echo "Lint failed. Please fix the issues before release."
