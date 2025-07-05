@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact Us - TravelEase</title>
+</head>
+<body>
+  <h1>Contact TravelEase</h1>
+
+  <section>
+    <h2>Office Contact Details</h2>
+    <p>Email: contact@travelease.pk</p>
+    <p>WhatsApp: +92 300 1234567</p>
+    <p>Address: Office 42, Mall Road, Islamabad, Pakistan</p>
+  </section>
+
+  <section>
+    <h2>Contact Form</h2>
+    <form onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" required><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Office Hours & Social Media</h2>
+    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+    <p>Follow us on Instagram, Facebook, and Twitter</p>
+  </section>
+
+  <section>
+    <h2>Our Location</h2>
+    <img src="map-placeholder.jpg" alt="Map location of TravelEase office">
+  </section>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      if (!name || !email || !subject || !message) {
+        alert("Please fill all fields.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
