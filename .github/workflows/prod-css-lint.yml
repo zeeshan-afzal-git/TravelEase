@@ -1,0 +1,19 @@
+name: CSS Lint on Production
+
+on:
+  push:
+    branches:
+      - production
+  pull_request:
+    branches:
+      - production
+
+jobs:
+  lint-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install
+      - run: npm install -g stylelint stylelint-config-standard
+      - run: stylelint "**/*.css"
