@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.destination-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 2%);
+  overflow: hidden;
+}
+
+.destination-card img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  height: auto;
+}
+
+.destination-info {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  color: #004d40;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
