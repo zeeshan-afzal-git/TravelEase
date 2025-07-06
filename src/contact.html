@@ -1,62 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Contact Us - TravelEase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Contact TravelEase</h1>
 
-  <section>
-    <h2>Office Contact Details</h2>
-    <p>Email: contact@travelease.pk</p>
-    <p>WhatsApp: +92 300 1234567</p>
-    <p>Address: Office 42, Mall Road, Islamabad, Pakistan</p>
-  </section>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="index.html">TravelEase</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="destination-page.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="trip-planner.html">Trip Planner</a></li>
+        <li class="nav-item"><a class="nav-link" href="travel-stories.html">Stories</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section>
-    <h2>Contact Form</h2>
-    <form onsubmit="return validateForm()">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required><br>
+<!-- Main Content -->
+<div class="container mt-5 pt-5">
+  
+  <h1 class="text-center my-4">Contact <span class="text-primary">TravelEase</span></h1>
+  
+  <div class="row g-4">
+    
+    <!-- Contact Details -->
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="h4 mb-3">Office Contact Details</h2>
+          <p><strong>Email:</strong> contact@travelease.pk</p>
+          <p><strong>WhatsApp:</strong> +92 300 1234567</p>
+          <p><strong>Address:</strong> Office 42, Mall Road, Islamabad, Pakistan</p>
+        </div>
+      </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required><br>
+      <div class="card shadow mt-4">
+        <div class="card-body">
+          <h2 class="h4 mb-3">Office Hours & Social Media</h2>
+          <p><strong>Mon-Fri:</strong> 9:00 AM - 6:00 PM</p>
+          <p>Follow us on:</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-primary btn-sm">Instagram</a>
+            <a href="#" class="btn btn-outline-primary btn-sm">Facebook</a>
+            <a href="#" class="btn btn-outline-primary btn-sm">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" required><br>
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="h4 mb-3">Send Us a Message</h2>
+          <form onsubmit="return validateForm()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" required></textarea><br>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-control" required>
+            </div>
 
-  <section>
-    <h2>Office Hours & Social Media</h2>
-    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-    <p>Follow us on Instagram, Facebook, and Twitter</p>
-  </section>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" class="form-control" required></textarea>
+            </div>
 
-  <section>
-    <h2>Our Location</h2>
-    <img src="map-placeholder.jpg" alt="Map location of TravelEase office">
-  </section>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
-  <script>
-    function validateForm() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var subject = document.getElementById("subject").value;
-      var message = document.getElementById("message").value;
+  </div>
 
-      if (!name || !email || !subject || !message) {
-        alert("Please fill all fields.");
-        return false;
-      }
-      return true;
+  <!-- Map Section -->
+   <div class="card shadow mt-5">
+    <div class="card-body">
+      <h2 class="h4 mb-3">Our Location</h2>
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.0710242328253!2d73.04786511521077!3d33.68442068070951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfc123456789ab%3A0x123456789abcdef!2sMall%20Road%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1688586205236!5m2!1sen!2s" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function validateForm() {
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var subject = document.getElementById("subject").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !subject || !message) {
+      alert("Please fill all fields.");
+      return false;
     }
-  </script>
+    return true;
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
